@@ -64,16 +64,25 @@ body > header
 #content
   position absolute
   overflow hidden
-  top 56px
+  top 54px
   left 0
   bottom 0
   right 0
 
   .col
+    position relative
     width 280px
     margin-right 2px
-    display inline-block
+    float left
     overflow hidden
+    .col-content
+      overflow auto
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom 60px
+
 
   a.bottom-btn
     position absolute
