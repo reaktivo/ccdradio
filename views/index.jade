@@ -2,8 +2,12 @@ extends layout
 
 block content
 
+  include calendar
   include week_activities
   include post
+
+  +calendar
+  +week_activities
 
   each post in posts
     +post(post)
