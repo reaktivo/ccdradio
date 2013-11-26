@@ -1,0 +1,8 @@
+mixin post(post)
+  .col.post
+    img.main(src=post.image)
+    .post-content
+      span.date= post.date
+      h3.title= post.title
+      .summary= post.summary
+    a.bottom-btn.play(href="#post") Escuchar

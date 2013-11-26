@@ -1,0 +1,271 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  font-family: Roboto Condensed, Helvetica Neue, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+body > header {
+  color: #fff;
+  background: #000;
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  height: 54px;
+}
+body > header h1 {
+  margin: 0;
+  padding: 20px;
+  font-size: 16px;
+}
+body > header h1 .radio {
+  color: #feff32;
+}
+body > header nav {
+  font-size: 13px;
+  display: inline-block;
+  float: left;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+body > header nav ul {
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+body > header nav ul li {
+  display: inline-block;
+  padding: 0;
+}
+body > header nav ul li a {
+  display: block;
+  margin: 0;
+  padding: 0 15px;
+  line-height: 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background: #000;
+}
+body > header nav ul li a:hover {
+  color: #000;
+  background: #feff32;
+}
+body > header nav ul li:first-child a {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+body > header nav ul li:last-child a {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#content {
+  position: absolute;
+  overflow: hidden;
+  top: 56px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#content .col {
+  width: 280px;
+  margin-right: 2px;
+  display: inline-block;
+  overflow: hidden;
+}
+#content a.bottom-btn {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  bottom: 0;
+  z-index: 5;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  -webkit-box-shadow: 0 0px 40px #000;
+  box-shadow: 0 0px 40px #000;
+}
+.week_activities {
+  color: #fff;
+  background: #0a1223;
+  position: relative;
+}
+.week_activities h2 {
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+}
+.week_activities .week .day {
+  border-top: 2px solid #152850;
+}
+.week_activities .week .day > h3 {
+  color: #cdcccc;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 2.6em;
+  text-align: center;
+}
+.week_activities .week .day a.activity {
+  display: table;
+  width: 100%;
+  color: #cdcccc;
+  padding: 10px 0;
+}
+.week_activities .week .day a.activity .time {
+  display: table-cell;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 0 1em;
+  width: 3em;
+}
+.week_activities .week .day a.activity .title {
+  display: table-cell;
+  font-size: 18px;
+  line-height: 24px;
+  padding-right: 10px;
+}
+.week_activities .week .day a.activity:hover {
+  color: #fff;
+  background: #152850;
+}
+.week_activities a.view-all {
+  background: #152850;
+}
+.post {
+  position: relative;
+  color: #343333;
+  background: #e6e6e6;
+}
+.post img.main {
+  width: 100%;
+}
+.post .post-content {
+  padding: 30px;
+}
+.post .post-content .date {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.post .post-content .title {
+  font-size: 24px;
+  margin: 0.6em 0;
+}
+.post .post-content .summary {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+.post .play {
+  color: #fff;
+  background: #227ffa;
+}
+.post a.bottom-btn {
+  -webkit-box-shadow: 0 -20px 40px #e6e6e6 !important;
+  box-shadow: 0 -20px 40px #e6e6e6 !important;
+}

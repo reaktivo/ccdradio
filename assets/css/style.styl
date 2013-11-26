@@ -1,0 +1,105 @@
+@import nib
+global-reset()
+
+main-color = #FEFF32
+
+body
+  font-family Roboto Condensed, Helvetica Neue, sans-serif
+
+a
+  text-decoration none
+  color inherit
+
+h1, h2, h3, h4, h5
+  reset-box-model()
+
+body > header
+  color #fff
+  background #000
+  position fixed
+  width 100%
+  border-bottom 2px solid #fff
+  height 54px
+  h1
+    margin 0
+    padding 20px
+    font-size 16px
+    .radio
+      color main-color
+  nav
+    font-size 13px
+    display inline-block
+    float left
+    position absolute
+    right 20px
+    top 15px
+    ul
+      display inline-block
+      float right
+      margin 0
+      padding 0
+      li
+        display inline-block
+        padding 0
+        menu-border-radius = 5px
+        a
+          display block
+          margin 0
+          padding 0 15px
+          line-height 2em
+          text-decoration none
+          text-transform uppercase
+          color #fff
+          background #000
+        & a:hover
+          color #000
+          background main-color
+        &:first-child a
+          border-top-left-radius menu-border-radius
+          border-bottom-left-radius menu-border-radius
+        &:last-child a
+          border-top-right-radius menu-border-radius
+          border-bottom-right-radius menu-border-radius
+
+#content
+  position absolute
+  overflow hidden
+  top 56px
+  left 0
+  bottom 0
+  right 0
+
+  .col
+    width 280px
+    margin-right 2px
+    display inline-block
+    overflow hidden
+
+  a.bottom-btn
+    position absolute
+    display block
+    width 100%
+    height 60px
+    line-height @height
+    bottom 0
+    z-index 5
+    text-transform uppercase
+    text-align center
+    font-size 14px
+    font-weight 300
+    box-shadow 0 0px 40px #000
+    // &:before
+    //   content " "
+    //   display block
+    //   position absolute
+    //   width 100%
+    //   padding-top 33px
+    //   overflow hidden
+    //   top -33px
+    //   background url("/img/shadow-gradient-horizontal.png") repeat-x
+    //   pointer-events none
+
+
+
+@import week_activities
+@import post
