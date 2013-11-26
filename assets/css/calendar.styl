@@ -1,0 +1,65 @@
+.calendar
+  border-color = #000
+  overflow hidden
+  font-size 11px
+  padding-bottom 2px
+  background border-color
+  .timeline
+    background #4D4C4C
+    height 15px
+    overflow hidden
+    .position
+      width 140px
+      display inline-block
+      border-left 1px solid #B3B2B2
+      .time
+        line-height 15px
+        color #ccc
+        position relative
+        top -1px
+        left 4px
+  .calendar-content
+    .day-row
+      overflow hidden
+      height 0
+      padding-top 0
+      transition all ease-in-out 0.3s
+      .show
+        float left
+        overflow hidden
+        padding-left 4px
+        border-left 2px solid border-color
+        font-size 13px
+        box-sizing border-box
+        white-space nowrap
+        text-overflow ellipsis
+        line-height 24px
+        color #ccc
+        background #222
+        transition all ease-in-out 0.3s
+      &.today
+        height 24px
+        .show
+          color #fff
+          height 24px
+          &.interviews
+            background #0F7FFE
+          &.invitations
+            background #66B031
+          &.news
+            background #073B52
+          &.radio
+            background #CD3A05
+
+.calendar.expand
+  .day-row
+    padding-top 2px
+    height 140px !important
+    &.today
+      height 140px !important
+      .show
+        height 140px !important
+        white-space normal
+  .show
+    height 140px
+    white-space normal

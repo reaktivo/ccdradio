@@ -1,0 +1,95 @@
+mixin show(theme, duration, title)
+  .show(class=theme, style="width: #{duration/24 * 100}%")
+    span.title=title
+    span.theme(class=theme)
+
+mixin calendar
+  .calendar(style="width: 3360px")
+    .timeline
+      span.position
+        span.time 00:00
+      span.position
+        span.time 01:00
+      span.position
+        span.time 02:00
+      span.position
+        span.time 03:00
+      span.position
+        span.time 04:00
+      span.position
+        span.time 05:00
+      span.position
+        span.time 06:00
+      span.position
+        span.time 07:00
+      span.position
+        span.time 08:00
+      span.position
+        span.time 09:00
+      span.position
+        span.time 10:00
+      span.position
+        span.time 11:00
+      span.position
+        span.time 12:00
+      span.position
+        span.time 13:00
+      span.position
+        span.time 14:00
+      span.position
+        span.time 15:00
+      span.position
+        span.time 16:00
+      span.position
+        span.time 17:00
+      span.position
+        span.time 18:00
+      span.position
+        span.time 19:00
+      span.position
+        span.time 20:00
+      span.position
+        span.time 21:00
+      span.position
+        span.time 22:00
+      span.position
+        span.time 23:00
+
+    .calendar-content
+      .day-row.today
+        // span.day Lunes 25 de Nov
+        .day-content
+          +show('interviews', 1, 'Entrevista: Joshua Davis')
+          +show('invitations', 1, 'Invitado Especial: Static Discos')
+          +show('news', 0.5, 'Noticias CCD')
+          +show('interviews', 2, 'Entrevista: Julio Cesar')
+          +show('radio', 2.5, 'Radio por las Tardes')
+          +show('interviews', 1, 'Entrevista: Joshua Davis')
+          +show('invitations', 1, 'Invitado Especial: Static Discos')
+          +show('news', 0.5, 'Noticias CCD')
+          +show('interviews', 2, 'Entrevista: Julio Cesar')
+          +show('radio', 2.5, 'Radio por las Tardes')
+      .day-row
+        .day-content
+          +show('news', 0.5, 'Noticias CCD')
+          +show('interviews', 2, 'Entrevista: Julio Cesar')
+          +show('interviews', 1, 'Entrevista: Joshua Davis')
+          +show('radio', 2.5, 'Radio por las Tardes')
+          +show('interviews', 1, 'Entrevista: Joshua Davis')
+          +show('invitations', 1, 'Invitado Especial: Static Discos')
+          +show('news', 0.5, 'Noticias CCD')
+          +show('interviews', 2, 'Entrevista: Julio Cesar')
+          +show('invitations', 1, 'Invitado Especial: Static Discos')
+          +show('radio', 2.5, 'Radio por las Tardes')
+      .day-row
+        .day-content
+          +show('radio', 2.5, 'Radio por las Tardes')
+          +show('interviews', 1, 'Entrevista: Joshua Davis')
+          +show('invitations', 1, 'Invitado Especial: Static Discos')
+          +show('news', 0.5, 'Noticias CCD')
+          +show('interviews', 2, 'Entrevista: Julio Cesar')
+          +show('interviews', 1, 'Entrevista: Joshua Davis')
+          +show('invitations', 1, 'Invitado Especial: Static Discos')
+          +show('news', 0.5, 'Noticias CCD')
+          +show('interviews', 2, 'Entrevista: Julio Cesar')
+          +show('radio', 2.5, 'Radio por las Tardes')
