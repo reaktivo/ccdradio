@@ -2,4 +2,4 @@ module.exports = (app) ->
 
   app.get '/', (req, res) ->
 
-    res.render 'index', title: "Hello"
+    res.render 'index', title: "CCDRadio"
