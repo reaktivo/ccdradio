@@ -6,10 +6,15 @@ browserify = require 'browserify-express'
 assets     = require 'connect-assets'
 load       = require 'express-load'
 nib        = require 'nib'
+nconf      = require 'nconf'
 
 module.exports = app = express()
 
-app.set 'port', process.env.PORT or 3000
+nconf.env().file
+  file: 'config.json'
+  dir: __dirname
+
+app.set 'port', nconf.get('PORT') or 3000
 app.set 'views', "#{__dirname}/views"
 app.set 'view engine', 'jade'
 app.use express.favicon()
