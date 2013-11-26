@@ -14,7 +14,7 @@ class Main
   setup_events: =>
     @window.resize @layout
     $('.post').click @show_post
-
+    $('li.programacion a').click @toggleCalendar
   animate: =>
 
 
@@ -32,6 +32,10 @@ class Main
     width = 0
     @cols.each -> width += $(this).outerWidth(yes)
     @content.css { width }
+
+  toggleCalendar: (e) =>
+    e.preventDefault()
+    $('.calendar').toggleClass('expand')
 
   viewport: =>
     if typeof window.innerWidth is 'undefined'
